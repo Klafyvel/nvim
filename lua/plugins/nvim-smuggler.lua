@@ -1,0 +1,1 @@
+require("smuggler").setup()
