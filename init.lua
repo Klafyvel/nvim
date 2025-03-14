@@ -57,8 +57,6 @@ vim.opt.spelllang="en,fr"
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
-vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
-
 -- AutoCmd
 local autocmd = vim.api.nvim_create_autocmd
 autocmd('CmdlineEnter', {

@@ -2,7 +2,7 @@ require("conform").setup({
     formatters = {
         runic = {
             command = "julia",
-            args = {"--project=@runic", "-e", "using Runic; exit(Runic.main(ARGS))", "--", "-"},
+            args = {"--project=@runic", "-e", "'using Runic; exit(Runic.main(ARGS))'"},
         },
     },
     formatters_by_ft = {
@@ -13,4 +13,5 @@ require("conform").setup({
         -- (e.g. after upgrading Julia and/or Runic).
         timeout_ms = 10000,
     },
+    log_level=vim.log.levels.DEBUG
 })

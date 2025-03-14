@@ -4,5 +4,8 @@ require("smuggler").setup({
        qf_auto_open = true,
        qf_custom_text = true,
        qf_custom_display = true,
-   } 
+   },
+   -- log ={
+   --     level="debug",
+   -- },
 })
